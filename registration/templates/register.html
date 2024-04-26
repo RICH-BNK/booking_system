@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}
+    register title
+{% endblock %}
+
+{% block content %}
+<section class="h-100 bg-light" style="margin-top:-60px;">
+  <div class="container py-5 h-100" >
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4"style="border-radius: 1rem;background-color:#4D4DFF;">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block" style="padding-left:20px;padding-top:35px;">
+              <img src="https://imgs.search.brave.com/XtjItPkKuSRhJCSBiHSWsB3KrvOB7a8qcYcvFeY_KqI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/b29kLWFkdmljZS1m/cm9tLWJlYXV0aWZ1/bC13b21hbl8zMjkx/ODEtMzUyNy5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw"
+                alt="Sample photo" class="img-fluid"
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+            </div>
+            <div class="col-xl-6">
+              <form class="card-body p-md-5 text-black" action="/adduser" method="POST">
+                 {% csrf_token %}
+                <h3 class="mb-5 text-uppercase">Create Account</h3>
+
+                <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1m" name="username" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1m">User Name</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example97" name="email" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example97">Email Address</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example97" name="password" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example97">Password</label>
+                </div>
+
+                <div class="d-flex justify-content-end pt-3">
+                  <button type="submit" class="btn btn-dark btn-lg ms-2">Create Account</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

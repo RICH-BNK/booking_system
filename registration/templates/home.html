@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Carousel -->
+<div id="demo" class=" container carousel slide mt-1" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+ <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <!--<div class="carousel-item active">
+      <img src="https://www.brookings.edu/wp-content/uploads/2019/03/RTX2FKNP.jpg?quality=75" alt="Los Angeles" class="d-block w-100">
+      <div class="carousel-caption" style="margin-bottom: 5%;">
+          <h1><span style="text-shadow:2px 2px 2px black;color:white;font-size:60px;">Affordable &</span><span style="color:red;font-size:60px;text-shadow:2px 2px 2px white;"> Hands on</span> <span style="text-shadow:2px 2px 2px white;color:green;font-size:60px;">Learning</span></h1>
+      </div>
+    </div>-->
+    <div class="carousel-item active">
+      <img src="https://static01.nyt.com/images/2023/01/10/multimedia/10places-singapore-gjmq/10places-singapore-gjmq-superJumbo.jpg"
+           alt="kim" class="d-block w-100"  width="200" height="600">
+    <div/>
+
+
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Features Section -->
+<section class="container my-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="text-center">
+        <i class="fas fa-code feature-icon"></i>
+        <h3>Online Bookings</h3>
+        <p>Book from anywhere in the world you are.</p>
+         <img src="https://simplybook.me/build/images/icons/features/icon_bookings.6e5806e6.gif" alt="New York" style="border-radius:50%;width:120px;height:120px;">
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="text-center">
+        <i class="fas fa-laptop-code feature-icon"></i>
+        <h3>Client and Admin application</h3>
+        <p>Offer clients your own personalised <br>
+            client app to book .</p>
+        <img src="https://simplybook.me/build/images/icons/features/icon_two-apps.b28140c4.gif" alt="New York" style="border-radius:50%;width:120px;height:120px;">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="text-center">
+        <i class="fas fa-certificate feature-icon"></i>
+        <h3>Payment methods</h3>
+        <p>Worldwide payments available.</p>
+        <img src="https://simplybook.me/build/images/icons/features/icon_payment.206e0fac.gif" alt="New York" style="border-radius:50%;width:120px;height:120px;">
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="text-center">
+        <i class="fas fa-certificate feature-icon"></i>
+        <h3>Catch a Flight</h3>
+        <p>Book flight from wherever you are.</p>
+        <img src="https://media.gettyimages.com/id/1441328804/vector/plane-ticket-sunglasses-doodle-5.jpg?s=612x612&w=0&k=20&c=P-CAOFPJDMy6VwS2w7gKW5IzRI7VJsEUksX6L4SAOfA=" alt="New York" style="border-radius:50%;width:120px;height:120px;">
+      </div>
+    </div>
+      <div class="col-md-4">
+      <div class="text-center">
+        <i class="fas fa-certificate feature-icon"></i>
+        <h3>Membership</h3>
+        <p>Obtain membership through subscription and enjoy certain services.</p>
+        <img src="https://simplybook.me/build/images/icons/features/static/icon_membership.139cba79.svg" alt="New York" style="border-radius:50%;width:120px;height:120px;">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="text-center">
+        <i class="fas fa-certificate feature-icon"></i>
+        <h3>Waiting List</h3>
+        <p>Client can sign up and spot on the waiting list.</p>
+        <img src="https://simplybook.me/build/images/icons/features/static/icon_timelines.05617698.svg" alt="New York" style="border-radius:50%;width:120px;height:120px;">
+      </div>
+    </div>
+  </div>
+</section>
+      <hr>
+
+<!-- About Section -->
+<section class=" container bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="text-center">Worldclass Booking is a brand new marketplace of service
+        companies all around the world - where people can find any service anywhere,
+        book an appointment and get a reminder.</p>
+  </div>
+</section>
+
+{% endblock %}
